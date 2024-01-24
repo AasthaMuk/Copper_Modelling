@@ -11,6 +11,7 @@ Enhance your proficiency in data analysis and machine learning with our "Industr
 2. Installation
 3. Usage
 4. Features
+5. Contributions
 
 
 **Key Technologies and Skills**
@@ -86,9 +87,6 @@ pip install streamlit
 - **Algorithm Assessment**: In the realm of regression, our primary objective is to predict the continuous variable of selling price. Our journey begins by splitting the dataset into training and testing subsets. We systematically apply various algorithms, evaluating them based on training and testing accuracy using the R2 (R-squared) metric, which signifies the coefficient of determination. This process allows us to identify the most suitable base algorithm tailored to our specific data.
 
 - **Algorithm Selection**: After thorough evaluation, two contenders, the Extra Trees Regressor and Random Forest Regressor, demonstrate commendable testing accuracy. Upon checking for any overfitting issues in both training and testing, both models exhibit strong performance without overfitting concerns. I choose the Random Forest Regressor for its ability to strike a balance between interpretability and accuracy, ensuring robust performance on unseen data.
-
-- **Hyperparameter Tuning with GridSearchCV and Cross-Validation**: To fine-tune our model and mitigate overfitting, we employ GridSearchCV with cross-validation for hyperparameter tuning. This function allows us to systematically explore multiple parameter values and return the optimal set of parameters.
-`{'max_depth': 20, 'max_features': None, 'min_samples_leaf': 1, 'min_samples_split': 2}`.
 
 - **Model Accuracy and Metrics**: With the optimized parameters, our Random Forest Regressor achieves an impressive 95.7% accuracy. This level of accuracy ensures robust predictions for unseen data. We further evaluate our model using essential metrics such as mean absolute error, mean squared error, root mean squared error, and the coefficient of determination (R-squared). These metrics provide a comprehensive assessment of our model's performance.
 
